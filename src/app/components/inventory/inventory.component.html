@@ -1,0 +1,77 @@
+<div style="display: flex; justify-content: space-around;">
+  <div style="width: 50vw;">
+    <mat-grid-list cols="4" rowHeight="90px" style="margin-top: 30px;">
+      <mat-grid-tile>
+        <button mat-button class="button0" (click)="addProduct(1)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button1" (click)="addProduct(2)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button2" (click)="addProduct(3)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button3" (click)="addProduct(4)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button4" (click)="addProduct(5)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button5" (click)="addProduct(6)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button6" (click)="addProduct(7)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button7" (click)="addProduct(8)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button8" (click)="addProduct(9)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button9" (click)="addProduct(10)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button10" (click)="addProduct(11)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button11" (click)="addProduct(12)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button12" (click)="addProduct(13)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button13" (click)="addProduct(14)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button14" (click)="addProduct(15)"></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button class="button15" (click)="addProduct(16)"></button>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div style="width: 30vw; margin-top: 10px;">
+    <div>
+      <p style="font-size: 20px;">Peso neto</p>
+      <mat-form-field appearance="outline">
+        <input matInput [formControl]="weight">
+      </mat-form-field>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <p style="font-size: 20px;">Precio por kilogramo</p>
+      <div class="inputfake">{{ priceKilo| number : '1.2' }}</div>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <p style="font-size: 20px;">Precio por producto</p>
+      <div class="inputfake">{{ PriceProduct | number : '1.2' }}</div>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <p style="font-size: 20px;">Precio total</p>
+      <div class="inputfake">{{ totalPrice | number : '1.2' }}</div>
+    </div>
+    <div>
+      <button mat-raised-button color="primary" type="button" (click)="getWeight()">Total a facturar</button>
+    </div>
+  </div>
+</div>

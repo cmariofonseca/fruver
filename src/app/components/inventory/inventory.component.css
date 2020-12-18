@@ -1,0 +1,128 @@
+mat-grid-tile {
+  background: cornsilk;
+}
+
+.button0{
+  background-image:url('/assets/brocoli.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button1{
+  background-image:url('/assets/cebolla.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button2{
+  background-image:url('/assets/coco.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button3{
+  background-image:url('/assets/coliflor.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button4{
+  background-image: url('/assets/durazno.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button5{
+  background-image:url('/assets/kiwi.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button6{
+  background-image:url('/assets/lechuga.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button7{
+  background-image:url('/assets/limon.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button8{
+  background-image:url('/assets/maiz.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button9{
+  background-image:url('/assets/mango.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button10{
+  background-image:url('/assets/manzana.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button11{
+  background-image:url('/assets/patata.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button12{
+  background-image:url('/assets/pina.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button13{
+  background-image:url('/assets/platano.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button14{
+  background-image:url('/assets/tomate.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.button15{
+  background-image:url('/assets/zanahoria.png');
+  height:70px;
+  width:70px;
+  background-size: cover;
+}
+
+.inputfake {
+  width: 200px;
+  height: 37px;
+  border-radius: 5px;
+  border: solid 1px rgb(224, 224, 224);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: blue;
+}

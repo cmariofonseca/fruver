@@ -1,0 +1,58 @@
+<div style="width: 98vw; height: 70vh; display: flex; justify-content: space-around;">
+  <div style="width: 20vw; height: 70vh;">
+    <div style="margin-top: 25px;">
+      <p style="font-size: 20px;">Nombre</p>
+      <mat-form-field appearance="outline">
+        <input matInput id="providerName" [formControl]="providerName">
+      </mat-form-field>
+    </div>
+    <div>
+      <p style="font-size: 20px;">Dirección</p>
+      <mat-form-field appearance="outline">
+        <input matInput id="address" [formControl]="address">
+      </mat-form-field>
+    </div>
+    <div>
+      <p style="font-size: 20px;">Teléfono</p>
+      <mat-form-field appearance="outline">
+        <input matInput id="telephone" [formControl]="telephone">
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-raised-button color="primary" (click)="createProvider()">Guardar proveedor</button>
+    </div>
+  </div>
+  <div style="width: 60vw; height: 70vh;" *ngIf="providers">
+    <table mat-table [dataSource]="providers" class="mat-elevation-z8" style="margin-top: 10px;">
+      <ng-container matColumnDef="id_provider">
+        <th mat-header-cell *matHeaderCellDef>ID proveedor</th>
+        <td mat-cell *matCellDef="let provider"> {{ provider.id_provider }} </td>
+      </ng-container>
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Nombre</th>
+        <td mat-cell *matCellDef="let provider"> {{ provider.name }} </td>
+      </ng-container>
+      <ng-container matColumnDef="address">
+        <th mat-header-cell *matHeaderCellDef>Dirección</th>
+        <td mat-cell *matCellDef="let provider"> {{ provider.address }} </td>
+      </ng-container>
+      <ng-container matColumnDef="telephone">
+        <th mat-header-cell *matHeaderCellDef>Teléfono</th>
+        <td mat-cell *matCellDef="let provider"> {{ provider.telephone }} </td>
+      </ng-container>
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Acciones</th>
+        <td mat-cell *matCellDef="let provider">
+          <button mat-icon-button style="color: red;" (click)="deleteProvider(provider.id_provider)">
+            <mat-icon>delete_outline</mat-icon>
+          </button>
+          <button mat-icon-button style="color: orange;" (click)="updateProvider(provider)">
+            <mat-icon>autorenew</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="providerColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: providerColumns;"></tr>
+    </table>
+  </div>
+</div>
